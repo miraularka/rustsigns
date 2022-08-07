@@ -6,8 +6,11 @@
     <title>-=Personal Rust Signage Directory=-</title>
 	<script type="text/javascript">
 		const signs = [
-			"http://example.sign/sign.png",
-			"http://example.sign/sign2.png",
+		"http://example.sign/sign.png",
+		"http://example.sign/sign2.png",
+		"|",
+		"http://example.sign/sign3.png",
+		"http://example.sign/sign4.png",
 		];
 	</script>
 
@@ -26,13 +29,18 @@
 			</li>
 		</ul>
 		<div class="w-auto p-3"
-		<pre id="output"></pre>
+			<pre id="output"></pre>
+		</div>
 	</div>
 	
     <script type="text/javascript">
 	var page = document.getElementById("output");
 	for (i in signs) {
-		page.innerHTML += "<img src=\"" + signs[i] + "\">";
+		if (signs[i] == "|") {
+			page.innerHTML += "<br /><br />";
+		}else{
+			page.innerHTML += "<img src=\"" + signs[i] + "\">";
+		}
 	}
 	var scroll = document.getElementById("scroll");
 	scroll.innerHTML += signs.length + " Signs";
