@@ -5,3 +5,4 @@ A simple website to display images to use for Rust's /SIL command. There is a si
 * Quick View of Sign Image Dimensions
 * Cleaner Scrolling
 * Collapsable Grouping Images by Category
+* Quick Links to Imgur/Other Image Uploader
